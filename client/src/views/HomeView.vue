@@ -21,6 +21,14 @@
 
 export default {
   name: 'HomeView',
+  watch: {
+    $route: {
+        immediate: true,
+        handler() {
+            document.title = 'Team Task Manager';
+        }
+    }
+  }
 }
 </script>
 
